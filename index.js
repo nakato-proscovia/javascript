@@ -86,3 +86,87 @@ let traveller = {
   country: "Uganda"
 }
 console.log(traveller);
+
+// 8. Symbol: Mathematical operators
+let a = 4;
+let b = 3;
+console.log(a + b);
+console.log(a - b);
+console.log(a * b);
+console.log(a / b);
+console.log(a % b);
+
+
+// Conditions in JavaScript
+//  if statement
+
+let condition = true;
+let condition1 = false;
+let condition2 = false;
+
+if (condition) {
+    // code to be executed if condition is true
+} else {
+    // code to be executed if condition is false
+}
+
+// else-if statement: used when conditions are more than two
+if (condition1) {
+    // code to be executed condition1 is true
+} else if (condition2) {
+    // code to be executed if condition2 is true
+} else {
+    // code to be executed if condition1 and conditon2 are false
+}
+
+// Practice Examples
+let mark = 50;
+
+if (mark > 69) {
+    console.log("Very good, you have passed the exam")
+}
+
+if (mark >= 70) {
+    console.log("You have passed the exam")
+} else {
+    console.log("You have failed the exam")
+}
+
+// Comparison Operators
+// 1. Equal to (==)
+// 2. Not equal to (!=)
+// 3. Strict equal to (===)
+// 4. Strict not equal to (!==)
+// 5. Greater than (>=)
+// 6. Less than (<=)
+
+// Arrays
+let cars = ["Volvo", "Benz", "Kia", "Toyota"]
+console.log(cars);
+console.log(cars[2]);
+
+// mixed array
+let mixedArray = ["Vision", 25, "Uganda", true, null, undefined, {name: "Nakato"}];
+console.log(mixedArray);
+console.log(mixedArray[6])
+
+// Object
+{} // an empty object
+
+let person = {
+    name: "Proscovia",
+    age: 25,
+    district: "Uganda",
+    isStudent: true,
+    hobbies: ["travelling", "coding", "networking"],
+    address: {
+        street: "123 Johnson St",
+        city: "Mbarara",
+        country: "Uganda",
+
+    }
+}
+console.log(person);
+console.log(person["name"]);
+console.log(person.hobbies);
+console.log(person.hobbies[1]);
