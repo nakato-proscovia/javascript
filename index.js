@@ -170,3 +170,90 @@ console.log(person);
 console.log(person["name"]);
 console.log(person.hobbies);
 console.log(person.hobbies[1]);
+
+
+// Assignment A'level Grading System
+
+let marks = 65;
+
+if (marks >= 80) {
+    console.log("Grade: A - Excellent")
+} else if (marks >= 70) {
+    console.log("Grade: B - Very Good")
+} else if (marks >= 60) {
+    console.log("Grade: C - Good")
+} else if (marks >= 50) {
+    console.log("Grade: D - Satisfactory")
+    } else if (marks >= 40) {
+        console.log("Grade: E - Pass")
+    } else {
+        console.log("Grade: O - Fail")
+    }
+
+// Assignment: An array called scores containing objects with each object having a name and score properties
+
+let scores = [
+    {name: "Patience", score: 85},
+    {name: "Tasha", score: 65},
+    {name: "Stephen", score: 45},
+    {name: "Eunice", score: 85},
+];
+
+scores.forEach(student => {
+    let grade;
+
+    if (student.score >= 90) {
+        grade = "A"
+    } else if (student.score >= 80) {
+        grade = "B"
+    } else if (student.score >= 70) {
+        grade = "C"
+    } else if (student.score >= 60) {
+        grade = "D"
+    } else if (student.score >= 50) {
+        grade = "E"
+    } else {
+        grade = "F"
+    }
+
+    console.log(student.name + ": " + student.score + " and my grade is " + grade)
+})
+
+// Functions
+// Functions are reusable blocks of coed that perform a specific task. They can take parameters and return value.
+// Function declaration: we ue the function keyword to declare a function
+
+function functionName() {
+    // code to be executed
+}
+
+function funcName(parameter) {
+    // code to be executed 
+    return parameter;
+}
+
+function funcWithParameters(parameter1, parameter2, parameter3) {
+    // code to be executed
+    return parameter1 + parameter2 + parameter3;
+}
+
+// Working expample of a function
+function returnSomeValue() {
+    return "This is my first working function in JavaScript"
+}
+
+returnSomeValue();
+function returnParameter(parameter) {
+    return parameter;
+}
+
+// console.log(returnParameter("Hello this is my second function in JavaScript"));
+const result = returnParameter("Helo this is my function in JavaScript");
+console.log(result);
+
+function addNumbers(x, y) {
+    return x + y;
+}
+
+const sum = addNumbers(4, 5);
+console.log(sum);
