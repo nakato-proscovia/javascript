@@ -190,6 +190,26 @@ if (marks >= 80) {
         console.log("Grade: O - Fail")
     }
 
+
+function getGrade(score) {
+    if(score >= 80) {
+        return "A - Excellent";
+    } else if (score >= 70) {
+        return "B - Good";
+    } else if (score >= 60) {
+        return "C - Fair";
+    } else if (score >= 50) {
+        return "D - Pass";
+    } else {
+        return "F - Fail"
+    }
+}
+console.log(getGrade(85));
+console.log(getGrade(74));
+console.log(getGrade(43));
+
+
+
 // Assignment: An array called scores containing objects with each object having a name and score properties
 
 let scores = [
@@ -218,6 +238,7 @@ scores.forEach(student => {
 
     console.log(student.name + ": " + student.score + " and my grade is " + grade)
 })
+
 
 // Functions
 // Functions are reusable blocks of coed that perform a specific task. They can take parameters and return value.
