@@ -278,3 +278,63 @@ function addNumbers(x, y) {
 
 const sum = addNumbers(4, 5);
 console.log(sum);
+
+// loops
+// 1. for loop
+// incrementing for loop
+for (let i = 0; i < 7; i++) {
+    console.log(i)
+}
+
+// Decrementing for loop
+for (let i = 7; i > 0; i--) {
+    console.log(i)
+}
+
+const myCars = ["volvo", "benz", "kia", "toyota"];
+console.log(myCars);
+const numberOfCars = myCars.length;
+console.log(numberOfCars);
+const kiaPosition = myCars.indexOf("kia");
+console.log("The postion of kia in the array is ", kiaPosition);
+
+for (let i = 0; i < myCars.length; i++) {
+    console.log(myCars[i]);
+}
+
+for (let car of myCars) {
+    function printCarPosition(car) {
+        const index = myCars.indexOf(car);
+        console.log("The position of " + car + " in the array is " + index);
+    }
+    printCarPosition(car);
+    console.log(car);
+}
+
+// 2. while loop
+// incrementing while loop
+let id = 0;
+while (id < 7) {
+    console.log("from the while loop ", id);
+    id++;
+}
+
+// decrementing while loop
+let i = 9;
+while (i > 0) {
+    console.log("Decrementing while loop", i);
+    i--;
+}
+
+// let password = "";
+
+// while (password !== "1234") {
+//     password = prompt("Please enter the password:");
+// }
+
+// // 3. Do-while loop
+// let iw = 0;
+// do {
+//     console.log("From the do-while loop ", iw);
+//     i++;
+// } while (i < 7);
