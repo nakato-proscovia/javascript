@@ -58,12 +58,24 @@ const task = {
     title: "Complete Javascript assignment",
     completed: false
 }
-console.log(task);
+// console.log(task);
 
 // JSON string
 const taskJSON = JSON.stringify(task);
-console.log(taskJSON);
+// console.log(taskJSON);
 
 // Parsing Object string back to Javascript object
 const parsedTask = JSON.parse(taskJSON);
-console.log(parsedTask);
+// console.log(parsedTask);
+
+// Local storage
+// storing data in local storage 
+localStorage.setItem("Name", "Proscovia Nakato");
+localStorage.setItem("task", taskJSON);
+
+// Retrieving data from local storage
+const nameFromStorage = localStorage.getItem("Name");
+console.log("Name from local storage: ", nameFromStorage);
+
+const taskFromStorage = localStorage.getItem("task")
+console.log(taskFromStorage);
